@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
 @font-face {
   font-family: fontku;
   src: url(Sweety.ttf);
@@ -101,12 +103,77 @@ body {
 .home {
   background-image: url(images/wave.png);
   background-size: cover;
+  position: relative;
   min-height: 100vh;
   margin-top: -6rem;
   padding-top: 15rem;
   padding-bottom: 5rem;
 }
 
+.angka {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  width: 300px;
+  right: 45%;
+  position: absolute;
+  bottom: 0;
+  animation: rocket 10s linear infinite;
+}
+
+.balon1 {
+  display: flex;
+  width: 250px;
+  right: 0%;
+  position: absolute;
+  bottom: 0;
+  animation: rocket 5s linear infinite;
+}
+
+.balon2 {
+  display: flex;
+  width: 250px;
+  right: 75%;
+  position: absolute;
+  bottom: 0;
+  animation: rocket 5s linear infinite;
+}
+
+.balon3 {
+  display: flex;
+  width: 250px;
+  right: 85%;
+  position: absolute;
+  bottom: 0;
+  animation: rocket 5s linear infinite;
+}
+
+.balon4 {
+  display: flex;
+  width: 250px;
+  right: 10%;
+  position: absolute;
+  bottom: 0;
+  animation: rocket 5s linear infinite;
+}
+
+.kue1 {
+  display: flex;
+  width: 100px;
+  right: 85%;
+  position: absolute;
+  bottom: 0;
+  animation: rocket 7s linear infinite;
+}
+
+.kue2 {
+  display: flex;
+  width: 100px;
+  right: 10%;
+  position: absolute;
+  bottom: 0;
+  animation: rocket 7s linear infinite;
+}
 .home h2,
 .info h2,
 .story h2,
@@ -401,6 +468,18 @@ footer li {
   line-height: 0;
 }
 
+@keyframes rocket {
+  0% {
+    bottom: -50;
+    opacity: 0;
+  }
+
+  100% {
+    bottom: 70%;
+    opacity: 0.5;
+  }
+}
+
 @keyframes rotating {
   from {
     transform: rotate(0);
@@ -492,6 +571,35 @@ footer li {
 @media (max-width: 576px) {
   html {
     font-size: 60%;
+  }
+
+  .angka {
+    right: 10%;
+  }
+
+  .balon2 {
+    right: 70%;
+    width: 200px;
+  }
+  .balon1 {
+    right: 0%;
+    width: 200px;
+  }
+  .balon3 {
+    display: none;
+  }
+  .balon4 {
+    display: none;
+  }
+  .kue1 {
+    display: none;
+  }
+  .kue2 {
+    display: none;
+  }
+
+  .hero::before {
+    background-image: url(images/mobbag.png);
   }
 
   .simply-countdown > .simply-section {
