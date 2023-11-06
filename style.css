@@ -110,6 +110,18 @@ body {
   padding-bottom: 5rem;
 }
 
+.fototrans {
+  position: absolute;
+  left: 0;
+  width: 400px;
+  bottom: 0;
+}
+.bgtext {
+  position: absolute;
+  l: 20%;
+  width: 350px;
+  bottom: 10%;
+}
 .angka {
   align-items: center;
   justify-content: center;
@@ -578,12 +590,10 @@ footer li {
   }
 
   .balon2 {
-    right: 70%;
-    width: 200px;
+    display: none;
   }
   .balon1 {
-    right: 0%;
-    width: 200px;
+    display: none;
   }
   .balon3 {
     display: none;

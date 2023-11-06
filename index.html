@@ -27,6 +27,8 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
     />
+    <!-- AOS Scroll -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -37,12 +39,23 @@
       class="hero w-100 h-100 p-3 mx-auto text-center d-flex justify-content-center align-items-center text-white"
     >
       <main>
-        <h4>for <span></span></h4>
+        <h4>Untu<span data-aos="zoom-out" data-aos-duration="500"></span></h4>
         <h1>Franciska Josephine</h1>
-        <h5>-Sweet Seventeen-</h5>
-        <p>Inviting You For Birthday Festivity</p>
-        <div class="simply-countdown"></div>
-        <a href="#home" class="btn btn-lg mt-4" onClick="enableScroll()"
+        <h5 data-aos="fade-up" data-aos-duration="1000">-Sweet Seventeen-</h5>
+        <p data-aos="fade-up" data-aos-duration="1000">
+          Inviting You For Birthday Festivity
+        </p>
+        <div
+          class="simply-countdown"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        ></div>
+        <a
+          href="#home"
+          class="btn btn-lg mt-4"
+          onClick="enableScroll()"
+          data-aos="fade-up"
+          data-aos-duration="3000"
           >SEE MORE</a
         >
       </main>
@@ -93,9 +106,11 @@
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-md-8 text-center">
-            <h2>Sweet Seventeen</h2>
-            <h3>Diselenggarakan pada November 2023 di Bandung, Jawa Barat.</h3>
-            <p>
+            <h2 data-aos="fade-up" data-aos-duration="3000">Sweet Seventeen</h2>
+            <h3 data-aos="fade-up" data-aos-duration="3000">
+              Diselenggarakan pada November 2023 di Bandung, Jawa Barat.
+            </h3>
+            <p data-aos="fade-up" data-aos-duration="3000">
               Oleh karena itu, dengan senang hati mengundang teman-teman untuk
               menghadiri pada acara kali ini.
             </p>
@@ -243,7 +258,7 @@
               data-gallery="mygallery"
             >
               <img
-                src="images/2 (3).jpg"
+                src="images/Screenshot 2023-11-06 005920.png"
                 alt="Sandhika & Nofa 5"
                 class="img-fluid w-100 rounded"
               />
@@ -519,11 +534,15 @@
     <script>
       const urlParams = new URLSearchParams(window.location.search);
       const nama = urlParams.get("n") || "";
-      const pronoun = urlParams.get("p") || "u";
+      const pronoun = urlParams.get("p") || "k";
       const namaContainer = document.querySelector(".hero h4 span");
       namaContainer.innerText = `${pronoun} ${nama},`.replace(/ ,$/, ",");
 
       document.querySelector("#nama").value = nama;
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
     </script>
   </body>
 </html>
