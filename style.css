@@ -12,6 +12,10 @@
   font-family: fontkita;
   src: url(Kaoly\ Demo-Regular.ttf);
 }
+@font-face {
+  font-family: fontgua;
+  src: url(American\ Captain.ttf);
+}
 
 :root {
   --pink: #f14e95;
@@ -61,7 +65,7 @@ body {
   color: #f14e95;
   padding-top: 30px;
   font-size: 2rem;
-  font-family: fontdia;
+  font-family: fontgua;
 }
 
 .hero p {
